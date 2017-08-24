@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>HealthCatalyst.ReSharper.Settings</id>
+    <version>1.0.1</version>
+    <title>Health Catalyst TeamSettings</title>
+    <authors>James Jensen</authors>
+    <owners>Health Catalyst</owners>
+    <projectUrl>http://www.healthcatalyst.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Team settings and live templates for ReSharper
+    </description>
+    <copyright>Copyright © Health Catalyst</copyright>
+    <dependencies>
+      <dependency id="Wave" version="[8.0,9.0)" />
+    </dependencies>
+    <releaseNotes>
+    </releaseNotes>
+    <tags>settings</tags>
+  </metadata>
+  <files>
+    <file src=".\Settings\" target="DotFiles\Extensions\HealthCatalyst.ReSharper.Settings\settings\" />
+  </files>
+</package> 
