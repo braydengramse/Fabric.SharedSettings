@@ -15,6 +15,12 @@ To use these settings:
 
 Now anybody who uses your solution will have this HealthCatalyst standard layer of style settings applied. Auto-formatting actions like `Ctrl-E, F` and `Ctrl-E, C` will apply these settings to your code styles.
 
+## Keeping Styles Updated ##
+
+When you make changes to ReSharper settings, think carefully about whether they should be shared organization-wide. If so, check to see whether someone else has already added it: you might just need to copy the latest version of `Settings\HealthCatalyst.Fabric.ReSharper.DotSettings` into your folder again. If not, please contribute to this project to help others.
+
+Do not change the `HealthCatalyst.Fabric.ReSharper.DotSettings` file in your own repository without getting it changed at the source, or your changes will be overwritten when a teammate updates this file someday.
+
 ## Contributing ##
 
 Please use [the GitHub repository](https://github.com/HealthCatalyst/Fabric.ReSharper) to suggest and make changes to this baseline file. Log an issue, create a pull request, comment on proposed changes with other developers, etc.
