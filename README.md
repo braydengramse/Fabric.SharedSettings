@@ -1,6 +1,8 @@
-# Fabric.ReSharper
+# Fabric.SharedSettings
 
 ReSharper and Code Analysis/StyleCop settings that we can share across the HealthCatalyst organization.
+
+**Check out the [Wiki](https://github.com/HealthCatalyst/Fabric.SharedSettings/wiki) for suggestions on dealing with common error messages.**
 
 ## Getting Started ##
 
