@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <RunCodeAnalysis>true</RunCodeAnalysis>
+        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Catalyst.MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+</Project>
