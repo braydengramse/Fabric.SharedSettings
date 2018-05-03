@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Catalyst.MinimumRecommendedRules</id>
+    <title>Catalyst shared Code Analisys Rules: Minimum recommended rules</title>
+    <version>$version$</version>
+    <authors>Health Catalyst</authors>
+    <owners>Health Catalyst</owners>
+    <licenseUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</licenseUrl>
+    <projectUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</projectUrl>
+    <description>Deployment package for shared code analysis rules. Catalyst Modified Version of rules that focus on the most critical problems in your code, including potential security holes, application crashes, and other important logic and design errors. It is recommended to include this rule set in any custom rule set you create for your projects.</description>
+  </metadata>
+  <files>
+    <file src="build\Catalyst.MinimumRecommendedRules.targets" target="build" />
+    <file src="build\Catalyst.MinimumRecommendedRules.ruleset" target="build" />
+  </files>
+</package>
