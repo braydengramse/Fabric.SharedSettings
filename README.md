@@ -24,19 +24,20 @@ Now anybody who uses your solution will have this HealthCatalyst standard layer 
 ### Code Analysis and StyleCop settings ###
 
 There are a handful of Ruleset files in the `SharedSettings` folder. For each project, decide which one makes the most sense to use as your baseline.
-   1. Catalyst.MinimumRecommendedRules.ruleset: A small list of rules that represent a pretty minimum amount of code analysis everyone should apply. This can be useful if you have an existing code base and don't want to push your way through tons of errors up front.
-   2. Catalyst.MostRules.Error.ruleset: This has most of Microsoft's recommended rules activated at Error level, which means that your build will fail if you're not following them.
-   3. Catalyst.TestRules.ruleset: Similar to Catalyst.MostRules.Error.ruleset, but with some rules disabled which don't make sense for Test projects.
+   1. Catalyst.MostRules.Error.ruleset: This has most of Microsoft's recommended rules activated at Error level, which means that your build will fail if you're not following them.
+   2. Catalyst.TestRules.ruleset: Similar to Catalyst.MostRules.Error.ruleset, but with some rules disabled which don't make sense for Test projects.
+   3. Catalyst.ClassLibrary.ruleset: Similar to Catalyst.MostRules.Error.ruleset, but with a few changes which make sense for Class Library projects.
 
 For each project:
-1. Create a RuleSet file that references one of the ruleset files you created above.
+1. Install the Microsoft.CodeAnalysis.FxCopAnalyzers NuGet package.
+2. Create a RuleSet file that references one of the ruleset files you created above.
    1. Within Visual Studio, right-click the project. Go to Properties > Code Analysis. 
    2. Under "Configuration", select "All Configurations"
    3. Under "Run this rule set", select "Choose multiple rule sets..." 
    4. If the rule set file you wish to reference is not in the given list, click the "Add rule set" button at the top left. Otherwise, just select the rule set.
    5. "Save As..." to save the RuleSet file alongside your project's file in the solution. Choose a file name that corresponds with the name of your project file.
-   6. Ensure the "Enable Code Analysis" and "Suppress results from generated code" options are enabled on your project.
-2. Add the `StyleCop.Analyzers` NuGet package to your project. This will enable style warnings.
+   6. "Enable Code Analysis on build" can be disabled with the new analyzers. Ensure "Suppress results from generated code" is enabled on your project.
+3. Add the `StyleCop.Analyzers` NuGet package to your project. This will enable style warnings.
 
 ## Keeping Settings Updated ##
 
