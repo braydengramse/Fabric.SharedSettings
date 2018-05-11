@@ -36,6 +36,20 @@ For each project:
    6. "Enable Code Analysis on build" can be disabled with the new analyzers. Ensure "Suppress results from generated code" is enabled on your project.
 3. Add the `StyleCop.Analyzers` NuGet package to your project. This will enable style warnings.
 
+### EditorConfig
+
+The .editorconfig file allows a development team to share consistent coding style rules between different editors and IDEs independent of platform.
+
+EditorConfig plugins look for a file named .editorconfig, starting with the same directory as the file currently being edited and recursively up directories until an .editorconfig file is found with the `root = true` directive.
+
+The .editorconfig file included in this project currently defines a few recommended styles for `c#` development.  
+
+**Useful Resources:**
+
+* [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)
+* [Create portable, custom editor settings with EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options)
+* [.NET coding convention settings for EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
+
 ## Keeping Settings Updated ##
 
 You can safely change your own Team-Shared ReSharper settings, as well as the project-specific `.ruleset` files in your solution to override these baseline settings with your own team's preferences. **Do not** change the `SharedSettings` files in your own repository without getting them changed at the source, or your changes will be overwritten when a teammate updates these files someday.
