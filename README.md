@@ -15,9 +15,6 @@ To begin, copy the `SharedSettings` folder from this repository into your soluti
 2. Commit changes to your repository. This should include both the new DotSettings file you copied, and some lines added to your team-shared solution DotSettings file that causes this new DotSettings file to be injected. It is safe to remove the AbsolutePath entry in the team-shared solution settings file, because you'll be relying on the path that's relative to your solution.
 3. Open the SettingsFileComparisonTool.linq file in LINQPad. Change the paths in that file and run it to remove lines from your solution settings file that don't need to be there anymore.
 4. Look at the remaining settings in your solution's team-shared settings file. If any of those settings are not specific to your code base, consider either dropping them to adopt the HealthCatalyst default, or submitting an issue and/or pull request to change the HealthCatalyst default to match your preference.
-5. If you haven't already, be sure to tell Visual Studio to prefer `this.` to align with these ReSharper settings:
-    > Code Style > General > 'this.' preferences 
-    > Change to "Prefer 'this.'" for all   
 
 Now anybody who uses your solution will have this HealthCatalyst standard layer of style settings applied. Auto-formatting actions like `Ctrl-E, F` and `Ctrl-E, C` will apply these settings to your code styles.
 
