@@ -11,7 +11,6 @@
     <description>Deployment package for shared code analysis rules. Health Catalyst rules that make sense in class library projects.</description>
   </metadata>
   <files>
-    <file src="build\Catalyst.ClassLibrary.targets" target="build" />
     <file src="build\Catalyst.ClassLibrary.ruleset" target="build" />
   </files>
 </package>

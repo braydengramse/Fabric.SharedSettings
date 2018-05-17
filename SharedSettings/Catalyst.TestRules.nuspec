@@ -11,7 +11,6 @@
     <description>Deployment package for shared code analysis rules. This ruleset is recommended for unit test projects.</description>
   </metadata>
   <files>
-    <file src="build\Catalyst.TestRules.targets" target="build" />
     <file src="build\Catalyst.TestRules.ruleset" target="build" />
   </files>
 </package>
