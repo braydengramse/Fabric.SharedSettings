@@ -1,5 +1,0 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Catalyst.ClassLibrary.ruleset</CodeAnalysisRuleSet>
-    </PropertyGroup>
-</Project>
