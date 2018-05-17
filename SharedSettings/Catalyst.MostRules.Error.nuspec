@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
+  <metadata minClientVersion="2.8">
     <id>Catalyst.MostRules.Error</id>
     <title>Catalyst shared Code Analisys Rules: Most rules as error</title>
     <version>$version$</version>
@@ -9,6 +9,7 @@
     <licenseUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</licenseUrl>
     <projectUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</projectUrl>
     <description>Deployment package for shared code analysis rules. This ruleset is based on Microsoft.AllRules.Errors.ruleset with some HealthCatalyst modifications.</description>
+    <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
     <file src="build\Catalyst.MostRules.Error.ruleset" target="build" />
