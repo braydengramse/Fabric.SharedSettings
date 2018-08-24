@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
-    <id>Catalyst.TestRules</id>
-    <title>Catalyst shared Code Analisys Rules: Test rules</title>
+    <id>Catalyst.CodeAnalysis.MostRules.Error</id>
+    <title>Catalyst shared Code Analysis Rules: Most rules as error</title>
     <version>$version$</version>
     <authors>Health Catalyst</authors>
     <owners>Health Catalyst</owners>
     <licenseUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</licenseUrl>
     <projectUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</projectUrl>
-    <description>Deployment package for shared code analysis rules. This ruleset is recommended for unit test projects.</description>
+    <description>Deployment package for shared code analysis rules. This ruleset is based on Microsoft.AllRules.Errors.ruleset with some HealthCatalyst modifications.</description>
     <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
-    <file src="build\Catalyst.TestRules.ruleset" target="build" />
+    <file src="SharedSettings\Catalyst.MostRules.Error.ruleset" target="build" />
   </files>
 </package>

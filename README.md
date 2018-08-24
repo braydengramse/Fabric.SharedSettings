@@ -38,11 +38,11 @@ For each project:
 
 ### EditorConfig
 
-The .editorconfig file allows a development team to share consistent coding style rules between different editors and IDEs independent of platform.
+The `.editorconfig` file allows a development team to share consistent coding style rules between different editors and IDEs independent of platform.
 
-EditorConfig plugins look for a file named .editorconfig, starting with the same directory as the file currently being edited and recursively up directories until an .editorconfig file is found with the `root = true` directive.
+To apply the shared `.editorconfig` settings to your project, move the `.editorconfig` file from the `SharedSettings` folder into the root folder of your repository. You can create other `.editorconfig` files in individual project folders to override these settings.
 
-The .editorconfig file included in this project currently defines a few recommended styles for `c#` development.  
+For more details, see https://editorconfig.org/
 
 **Useful Resources:**
 
@@ -52,10 +52,12 @@ The .editorconfig file included in this project currently defines a few recommen
 
 ## Keeping Settings Updated ##
 
-You can safely change your own Team-Shared ReSharper settings, as well as the project-specific `.ruleset` files in your solution to override these baseline settings with your own team's preferences. **Do not** change the `SharedSettings` files in your own repository without getting them changed at the source, or your changes will be overwritten when a teammate updates these files someday.
+You can safely change your own Team-Shared ReSharper settings, as well as the project-specific `.ruleset` files in your solution to override these baseline settings with your own team's preferences. **Do not** change the `SharedSettings` files, or the root `.editorconfig` file in your own repository without getting them changed at the source, or your changes will be overwritten when a teammate updates these files someday.
 
-When you make changes to either ReSharper settings or Code Analysis/StyleCop rules, think carefully about whether they should be shared organization-wide. If so, check to see whether someone else has already added those changes to this repository: you might just need to copy the latest version of the files in `SharedSettings` into your folder again. If not, please contribute to this project to help others.
+When you make changes to ReSharper settings, Code Analysis/StyleCop rules, or `.editorconfig`, think carefully about whether they should be shared organization-wide. If so, check to see whether someone else has already added those changes to this repository: you might just need to copy the latest version of the files in `SharedSettings` into your folder again. If not, please contribute to this project to help others.
+
+Periodically, you should update the files in your SharedSettings folder, as well as the root `.editorconfig` from the ones here.
 
 ## Contributing ##
 
-Please use [the GitHub repository](https://github.com/HealthCatalyst/Fabric.ReSharper) to suggest and make changes to these baseline settings file. Log an issue, create a pull request, comment on proposed changes with other developers, etc.
+Please use [the GitHub repository](https://github.com/HealthCatalyst/Fabric.SharedSettings) to suggest and make changes to these baseline settings file. Log an issue, create a pull request, comment on proposed changes with other developers, etc.
