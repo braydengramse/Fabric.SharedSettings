@@ -798,7 +798,8 @@
     <Rule Id="CA2244" Action="Error" />
     <Rule Id="CA2231" Action="Error" />
     <Rule Id="CA2227" Action="None" />
-    <Rule Id="CA2007" Action="None" />
+    <Rule Id="CA2007" Action="Error" />
+    <Rule Id="CA1509" Action="Error" />
     <Rule Id="CA1507" Action="Error" />
     <Rule Id="CA1068" Action="Error" />
     <Rule Id="CA1067" Action="Error" />
@@ -829,6 +830,7 @@
     <Rule Id="CA2241" Action="Error" />
     <Rule Id="CA2242" Action="Error" />
     <Rule Id="CA2243" Action="Error" />
+    <Rule Id="CA5358" Action="Error" />
     <Rule Id="CA9999" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetCore.CSharp.Analyzers" RuleNamespace="Microsoft.NetCore.CSharp.Analyzers">
@@ -853,6 +855,7 @@
     <Rule Id="CA2235" Action="Error" />
     <Rule Id="CA2237" Action="Error" />
     <Rule Id="CA3075" Action="Error" />
+    <Rule Id="CA3147" Action="Error" />
     <Rule Id="CA9999" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetFramework.CSharp.Analyzers" RuleNamespace="Microsoft.NetFramework.CSharp.Analyzers">

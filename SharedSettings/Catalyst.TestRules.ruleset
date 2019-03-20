@@ -24,7 +24,7 @@
     <Rule Id="CA1020" Action="None" />
     <Rule Id="CA1021" Action="Error" />
     <Rule Id="CA1023" Action="Error" />
-    <Rule Id="CA1024" Action="Error" />
+    <Rule Id="CA1024" Action="None" />
     <Rule Id="CA1025" Action="Error" />
     <Rule Id="CA1026" Action="None" />
     <Rule Id="CA1027" Action="Error" />
@@ -95,6 +95,7 @@
     <Rule Id="CA1504" Action="Error" />
     <Rule Id="CA1505" Action="Error" />
     <Rule Id="CA1506" Action="Error" />
+    <Rule Id="CA1509" Action="Error" />
     <Rule Id="CA1600" Action="Error" />
     <Rule Id="CA1601" Action="Error" />
     <Rule Id="CA1700" Action="Error" />
@@ -148,7 +149,7 @@
     <Rule Id="CA2003" Action="Error" />
     <Rule Id="CA2004" Action="Error" />
     <Rule Id="CA2006" Action="Error" />
-	<Rule Id="CA2007" Action="None" />
+    <Rule Id="CA2007" Action="None" />
     <Rule Id="CA2100" Action="Error" />
     <Rule Id="CA2101" Action="Error" />
     <Rule Id="CA2102" Action="Error" />
@@ -623,9 +624,9 @@
     <Rule Id="SA1611" Action="None" />
     <Rule Id="SA1633" Action="None" />
     <Rule Id="SA1652" Action="None" />
-	<Rule Id="SA0001" Action="None" />
+    <Rule Id="SA0001" Action="None" />
     <Rule Id="SA0002" Action="Error" />
-	<Rule Id="SA1000" Action="Error" />
+    <Rule Id="SA1000" Action="Error" />
     <Rule Id="SA1001" Action="Error" />
     <Rule Id="SA1002" Action="Error" />
     <Rule Id="SA1003" Action="Error" />
@@ -822,6 +823,7 @@
     <Rule Id="CA2241" Action="Error" />
     <Rule Id="CA2242" Action="Error" />
     <Rule Id="CA2243" Action="Error" />
+    <Rule Id="CA5358" Action="Error" />
     <Rule Id="CA9999" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetCore.CSharp.Analyzers" RuleNamespace="Microsoft.NetCore.CSharp.Analyzers">
@@ -846,6 +848,7 @@
     <Rule Id="CA2235" Action="Error" />
     <Rule Id="CA2237" Action="Error" />
     <Rule Id="CA3075" Action="Error" />
+    <Rule Id="CA3147" Action="Error" />
     <Rule Id="CA9999" Action="Error" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetFramework.CSharp.Analyzers" RuleNamespace="Microsoft.NetFramework.CSharp.Analyzers">
