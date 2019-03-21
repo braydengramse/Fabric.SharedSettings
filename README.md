@@ -15,9 +15,6 @@ To begin, copy the `SharedSettings` folder from this repository into your soluti
 2. Commit changes to your repository. This should include both the new DotSettings file you copied, and some lines added to your team-shared solution DotSettings file that causes this new DotSettings file to be injected. It is safe to remove the AbsolutePath entry in the team-shared solution settings file, because you'll be relying on the path that's relative to your solution.
 3. Open the SettingsFileComparisonTool.linq file in LINQPad. Change the paths in that file and run it to remove lines from your solution settings file that don't need to be there anymore.
 4. Look at the remaining settings in your solution's team-shared settings file. If any of those settings are not specific to your code base, consider either dropping them to adopt the HealthCatalyst default, or submitting an issue and/or pull request to change the HealthCatalyst default to match your preference.
-5. If you haven't already, be sure to tell Visual Studio to prefer `this.` to align with these ReSharper settings:
-    > Code Style > General > 'this.' preferences 
-    > Change to "Prefer 'this.'" for all   
 
 Now anybody who uses your solution will have this HealthCatalyst standard layer of style settings applied. Auto-formatting actions like `Ctrl-E, F` and `Ctrl-E, C` will apply these settings to your code styles.
 
@@ -39,12 +36,28 @@ For each project:
    6. "Enable Code Analysis on build" can be disabled with the new analyzers. Ensure "Suppress results from generated code" is enabled on your project.
 3. Add the `StyleCop.Analyzers` NuGet package to your project. This will enable style warnings.
 
+### EditorConfig
+
+The `.editorconfig` file allows a development team to share consistent coding style rules between different editors and IDEs independent of platform.
+
+To apply the shared `.editorconfig` settings to your project, move the `.editorconfig` file from the `SharedSettings` folder into the root folder of your repository. You can create other `.editorconfig` files in individual project folders to override these settings.
+
+For more details, see https://editorconfig.org/
+
+**Useful Resources:**
+
+* [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)
+* [Create portable, custom editor settings with EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options)
+* [.NET coding convention settings for EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
+
 ## Keeping Settings Updated ##
 
-You can safely change your own Team-Shared ReSharper settings, as well as the project-specific `.ruleset` files in your solution to override these baseline settings with your own team's preferences. **Do not** change the `SharedSettings` files in your own repository without getting them changed at the source, or your changes will be overwritten when a teammate updates these files someday.
+You can safely change your own Team-Shared ReSharper settings, as well as the project-specific `.ruleset` files in your solution to override these baseline settings with your own team's preferences. **Do not** change the `SharedSettings` files, or the root `.editorconfig` file in your own repository without getting them changed at the source, or your changes will be overwritten when a teammate updates these files someday.
 
-When you make changes to either ReSharper settings or Code Analysis/StyleCop rules, think carefully about whether they should be shared organization-wide. If so, check to see whether someone else has already added those changes to this repository: you might just need to copy the latest version of the files in `SharedSettings` into your folder again. If not, please contribute to this project to help others.
+When you make changes to ReSharper settings, Code Analysis/StyleCop rules, or `.editorconfig`, think carefully about whether they should be shared organization-wide. If so, check to see whether someone else has already added those changes to this repository: you might just need to copy the latest version of the files in `SharedSettings` into your folder again. If not, please contribute to this project to help others.
+
+Periodically, you should update the files in your SharedSettings folder, as well as the root `.editorconfig` from the ones here.
 
 ## Contributing ##
 
-Please use [the GitHub repository](https://github.com/HealthCatalyst/Fabric.ReSharper) to suggest and make changes to these baseline settings file. Log an issue, create a pull request, comment on proposed changes with other developers, etc.
+Please use [the GitHub repository](https://github.com/HealthCatalyst/Fabric.SharedSettings) to suggest and make changes to these baseline settings file. Log an issue, create a pull request, comment on proposed changes with other developers, etc.

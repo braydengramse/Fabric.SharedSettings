@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8">
+    <id>Catalyst.CodeAnalysis.TestRules</id>
+    <title>Catalyst shared Code Analysis Rules: Test rules</title>
+    <version>$version$</version>
+    <authors>Health Catalyst</authors>
+    <owners>Health Catalyst</owners>
+    <licenseUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</licenseUrl>
+    <projectUrl>https://github.com/HealthCatalyst/Fabric.SharedSettings</projectUrl>
+    <description>Deployment package for shared code analysis rules. This ruleset is recommended for unit test projects.</description>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src="SharedSettings\Catalyst.TestRules.ruleset" target="build" />
+  </files>
+</package>
