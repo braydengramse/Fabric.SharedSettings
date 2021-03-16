@@ -1,0 +1,21 @@
+# NOTE: Requires **VS2019 16.3** or later
+
+# Catalyst Test Project Rules
+# Description: Health Catalyst rules that make sense in test projects.
+
+# Code files
+[*.{cs,vb}]
+
+
+# Default severity for analyzer diagnostics - Requires **VS2019 16.5** or later
+dotnet_diagnostic.CA1034.severity = none
+dotnet_diagnostic.CA1052.severity = none
+dotnet_diagnostic.CA1062.severity = none
+dotnet_diagnostic.CA1303.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1716.severity = none
+dotnet_diagnostic.CA1812.severity = none
+dotnet_diagnostic.SA1305.severity = none
+dotnet_diagnostic.SA1402.severity = none
+dotnet_diagnostic.SA1413.severity = none
+dotnet_diagnostic.VSTHRD111.severity = none
