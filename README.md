@@ -16,6 +16,14 @@ Copy the `SharedSettings/.editorconfig` file from this repository into your solu
 2. If you have projects that represent libraries for external use (for example, they get published as Nuget packages), add the contents of `SharedSettings/Catalyst.ClassLibrary.ruleset.editorconfig` to the `.editorconfig` file for those projects. These will make some rules stricter, for things like adding `.ConfigureAwait(false)` to Tasks, and enforcing good documentation practices.
 3. If you have automated test projects, add the contents of `SharedSettings/Catalyst.TestRules.ruleset.editorconfig` to the `.editorconfig` file for those projects. This will loosen some rules around things like having multiple classes in the same file, which tend to be more acceptable in test libraries.
 4. Make sure you're not unintentionally overriding these settings via Resharper DotSettings files or Code Analysis Rulesets.
+5. We also recommend adding the following to your csproj files:
+```
+    <Nullable>enable</Nullable>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    <TreatWarningsAsErrors></TreatWarningsAsErrors>
+    <WarningsAsErrors>nullable</WarningsAsErrors>
+```
 
 ### For TypeScript/Javascript applications
 
@@ -27,7 +35,8 @@ For web applications (TypeScript/Javascript/Angular):
 
 The `.editorconfig` file allows a development team to share consistent coding style rules between different editors and IDEs independent of platform.
 
-To apply the shared `.editorconfig` settings to your project, move the `.editorconfig` file from the `SharedSettings` folder into the root folder of your repository. You can create other `.editorconfig` files in individual project folders to override these settings.
+To apply the shared `.editorconfig` settings to your project, move the `.editorconfig` file from the `SharedSettings` folder into the root folder of your repository. You can create other `.editorconfig` files in subfolders to override these settings, or you can use glob definitions in the root .editorconfig
+to change the settings for files matching specific patterns.
 
 For more details, see https://editorconfig.org/
 
