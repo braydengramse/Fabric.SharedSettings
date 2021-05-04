@@ -8,14 +8,13 @@
 
 
 # Default severity for analyzer diagnostics - Requires **VS2019 16.5** or later
-dotnet_diagnostic.CA1034.severity = none
-dotnet_diagnostic.CA1052.severity = none
-dotnet_diagnostic.CA1062.severity = none
-dotnet_diagnostic.CA1303.severity = none
-dotnet_diagnostic.CA1305.severity = none
-dotnet_diagnostic.CA1716.severity = none
-dotnet_diagnostic.CA1812.severity = none
-dotnet_diagnostic.SA1305.severity = none
-dotnet_diagnostic.SA1402.severity = none
-dotnet_diagnostic.SA1413.severity = none
-dotnet_diagnostic.VSTHRD111.severity = none
+dotnet_diagnostic.CA1034.severity = none # Nested types should not be visible
+dotnet_diagnostic.CA1052.severity = none # Static holder types should be Static or NotInheritable
+dotnet_diagnostic.CA1062.severity = none # Validate arguments of public methods
+dotnet_diagnostic.CA1303.severity = none # Do not pass literals as localized parameters
+dotnet_diagnostic.CA1305.severity = none # Specify IFormatProvider
+dotnet_diagnostic.CA1716.severity = none # Identifiers should not match keywords
+dotnet_diagnostic.CA1812.severity = none # Avoid uninstantiated internal classes
+dotnet_diagnostic.SA1402.severity = none # FileMayOnlyContainASingleType
+dotnet_diagnostic.SA1413.severity = none # UseTrailingCommasInMultiLineInitializers
+dotnet_diagnostic.VSTHRD111.severity = none # Use .ConfigureAwait(bool)
