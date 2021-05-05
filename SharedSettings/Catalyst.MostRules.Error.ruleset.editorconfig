@@ -9,13 +9,17 @@
 
 # Default severity for analyzer diagnostics - Requires **VS2019 16.5** or later
 dotnet_analyzer_diagnostic.severity = error
-dotnet_diagnostic.severity = error
+
 dotnet_diagnostic.CA1008.severity = none # Enums should have zero value
 dotnet_diagnostic.CA1062.severity = none # Validate arguments of public methods
 dotnet_diagnostic.CA1822.severity = none # Mark members as static
 dotnet_diagnostic.CA2007.severity = none # Do not directly await a Task
 dotnet_diagnostic.CA2227.severity = none # Collection properties should be read only
 dotnet_diagnostic.CS1591.severity = none # Missing XML comment for publicly visible type or member
+dotnet_diagnostic.IDE0007.severity = none # 'var' preferences; I trust devs to know when they want to be explicit.
+dotnet_diagnostic.IDE0046.severity = none # Use conditional expression for return
+dotnet_diagnostic.IDE0050.severity = silent # Convert anonymous type to tuple
+dotnet_diagnostic.IDE0058.severity = none # Remove unnecessary expression value
 dotnet_diagnostic.SA0001.severity = none # XmlCommentAnalysisDisabled
 dotnet_diagnostic.SA1009.severity = none # ClosingParenthesisMustBeSpacedCorrectly
 dotnet_diagnostic.SA1111.severity = none # ClosingParenthesisMustBeOnLineOfLastParameter
